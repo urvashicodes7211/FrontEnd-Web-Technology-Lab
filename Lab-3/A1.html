@@ -1,0 +1,39 @@
+<!-- // WAP in JavaScript to make simple calculator using popup box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n1 = parseInt(prompt("Enter n1 :"));
+        let n2 = parseInt(prompt("Enter n1 :"));
+
+        let op = prompt("Enter opration(+,-,*,/) : ");
+
+        let ans;
+
+        if(op == '+'){
+            ans = n1 + n2;
+        }else if(op == '-'){
+            ans = n1 - n2;
+        }else if(op == '*'){
+            ans = n1 * n2;
+        }else if(op == '/'){
+            if(n2 != 0){
+                ans = n1 / n2;
+            }
+            else{
+                alert("Division by zero is not possible!");
+            }
+        }else{
+            alert("Invalid number!!")
+        }
+
+        alert(ans);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- WAP in JavaScript to check whether the given number is Armstrong or not -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n = parseInt(prompt("Enter n :"));
+        let ori = n,m,c=0,ans=0;
+        while(n > 0){
+            m = n % 10;
+            n = parseInt(n / 10);
+            c+=1;
+        }
+        n = ori;
+        while(n > 0){
+            m = n % 10;
+            n = parseInt(n / 10);
+            ans = ans + Math.pow(m,c);
+        }
+        if(ans == ori){
+            alert("Armstrong");
+        }else{
+            alert("not Armstrong");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
