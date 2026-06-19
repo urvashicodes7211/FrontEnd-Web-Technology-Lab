@@ -1,0 +1,25 @@
+<!-- Write a JavaScript to take 2-digit number and then separate these 2 digits, then multiply ƒrst digit by itself for
+second digit times. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter two digit number : "));
+        let ans = 1;
+        while(n>10){
+            m = n % 10;
+            n = parseInt(n / 10);
+        }
+        for(i=1;i<=m;i++){
+            ans *= n;
+        }
+        document.write(ans);
+    </script>
+</body>
+</html>
