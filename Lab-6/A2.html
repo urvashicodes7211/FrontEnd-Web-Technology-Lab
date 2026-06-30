@@ -1,0 +1,40 @@
+ <!-- Demonstrate different array functions like push, pop, shift, unshift, splice, sort etc…  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let color = ['red','green','white','yellow','blue','orange'];
+
+        color.push('pink');
+        document.write("<b>push : </b>"+color+"<br/>");
+
+        color.pop();
+        document.write("<b>pop : </b>"+color+"<br/>");
+        
+        color.shift();
+        document.write("<b>shift : </b>"+color+"<br/>");
+
+        color.unshift('black');
+        document.write("<b>unshift : </b>"+color+"<br/>");
+
+        color.splice(1,2);
+        document.write("<b>splice : </b>"+color+"<br/>");
+
+        color.sort();
+        document.write("<b>sort : </b>"+color+"<br/>");
+
+        let colorNew = color.slice(1,2);
+        document.write("<b>slice : </b>"+colorNew+"<br/>");
+
+        color.reverse();
+        document.write("<b>reverse : </b>"+color+"<br/>");
+
+        
+    </script>
+</body>
+</html>
