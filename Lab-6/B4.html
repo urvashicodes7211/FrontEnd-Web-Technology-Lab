@@ -1,0 +1,80 @@
+<!-- WAP to display products stored in array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+        let products = [
+    {
+        name: "Laptop",
+        description: "Dell Inspiron 15 with Intel Core i5 Processor.",
+        price: "₹65,000"
+    },
+    {
+        name: "Smartphone",
+        description: "Samsung Galaxy with 128GB storage.",
+        price: "₹28,000"
+    },
+    {
+        name: "Headphones",
+        description: "Boat Wireless Bluetooth Headphones.",
+        price: "₹2,500"
+    },
+    {
+        name: "Smart Watch",
+        description: "Noise Smart Watch with Heart Rate Monitor.",
+        price: "₹5,500"
+    },
+    {
+        name: "Keyboard",
+        description: "Logitech Mechanical Keyboard.",
+        price: "₹1,800"
+    },
+    {
+        name: "Mouse",
+        description: "HP Wireless Optical Mouse.",
+        price: "₹900"
+    },
+    {
+        name: "Monitor",
+        description: "LG 24-inch Full HD IPS Monitor.",
+        price: "₹12,000"
+    },
+    {
+        name: "Printer",
+        description: "Canon All-in-One Inkjet Printer.",
+        price: "₹8,500"
+    },
+    {
+        name: "Tablet",
+        description: "Apple iPad with Retina Display.",
+        price: "₹22,000"
+    },
+    {
+        name: "USB Pen Drive",
+        description: "SanDisk 64GB USB 3.0 Pen Drive.",
+        price: "₹700"
+    }
+];
+
+        document.write("<div class='container mt-4'>");
+        document.write("<div class='row gap-5'>");
+        for(i=0;i<products.length;i++){
+            document.write(`
+            <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">${products[i].name}</h5>
+    <p class="card-text">${products[i].description}</p>
+    <a href="#" class="btn btn-primary">${products[i].price}</a>
+  </div>
+</div>
+            `)
+        }
+    </script>
+</body>
+</html>
